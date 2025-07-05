@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Input from "./components/Input";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Button el="anchor" href="https://youtube.com">
         A link
       </Button>
+      <Container onClick={() => console.log('sad')} as={Button}>Holas</Container>
       <Button el="button">Button</Button>
     </main>
   );
